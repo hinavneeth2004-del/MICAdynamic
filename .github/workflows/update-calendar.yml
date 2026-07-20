@@ -25,7 +25,7 @@ jobs:
       - name: Build ICS
         env:
           SHAREPOINT_URL: ${{ secrets.SHAREPOINT_URL }}
-          SHEET_NAME: "Schedule Term-3 phase-1"
+          SHEET_NAME: "Schedule_Term-3_phase-1"
         run: python build_ics.py
 
       - name: Commit and push if changed
